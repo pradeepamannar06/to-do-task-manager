@@ -1,0 +1,15 @@
+
+{
+  "name": "todo-task-manager",
+  "version": "1.0.0",
+  "description": "To-Do Task Manager using HTML, CSS, JavaScript and Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
+

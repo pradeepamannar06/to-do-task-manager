@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f4f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 520px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #222b45;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+#task-form {
+    display: flex;
+    gap: 10px;
+}
+
+#task-input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 14px;
+}
+
+#task-form button {
+    background: #4f46e5;
+    color: white;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin: 22px 0;
+    flex-wrap: wrap;
+}
+
+.filter {
+    background: #eee;
+    color: #333;
+}
+
+.filter.active {
+    background: #4f46e5;
+    color: white;
+}
+
+.task-summary {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+#task-list {
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.task-item input {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+.task-text {
+    flex: 1;
+    overflow-wrap: anywhere;
+    color: #333;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.delete-btn {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+#empty-message {
+    text-align: center;
+    color: #999;
+    padding: 22px 0;
+}
+
+.clear-btn {
+    background: #222b45;
+    color: white;
+    width: 100%;
+    margin-top: 18px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    #task-form {
+        flex-direction: column;
+    }
+}
